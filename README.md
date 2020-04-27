@@ -8,9 +8,13 @@ A servo-controlled tilt bracket with an Arduino Uno and joystick module.The work
 ##### Components used
 
 1 Arduino Uno
+
 1 Servo Shield	
+
 2 Servo	motor
+
 1 Pan and Tilt Bracket
+
 1 joystick module
 
 ##### How it works
