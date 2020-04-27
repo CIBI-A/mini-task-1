@@ -1,5 +1,9 @@
 # mini-task-1
 
+#### Components used
+#### How it works
+#### Implementation
+
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
   
@@ -27,4 +31,15 @@ Joystick is connected to analog pins(input pins) of Arduino and servo motors are
 
 Camera trap is essentially an autonomous DSLR camera with a sensor built in to detect the subject. When the sensor detects a subject, the camera takes a photo
 
+#### Components used
+
+1 Arduino Nano, 
+1 PIR Sensor,
+2 Optocouplers,	
+1 2.5mm Stereo Plug,
+
+#### How it works
+
+PIR sensor generates voltage when it detects change in the heat 
+#### Implementation
  
