@@ -19,10 +19,10 @@ The joystick is essentially a combination of two 10KΩ potentiometers and a tact
 Servo motors are used for the rotating the bracket.Servos operate dependent on the duration of a received pulse with a 50Hz frequency.
 
 #### Implementation
-Joystick is connected to analog 
+Joystick is connected to analog pins of Arduino and servo motors are connected to digital pins.Value on the potentiometer on the Joystick is between 0 and 1023, which we can then map to the range the servo library expects. i.e. 0 – 180.Tactile switch is used to detect if the button has been pressed.
 
 
 ## Project-2:
-### Camera Trap
+### [Camera Trap](https://diyodemag.com/projects/camera_trap)
 
  
