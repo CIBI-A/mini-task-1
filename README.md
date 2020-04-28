@@ -1,11 +1,12 @@
 # mini-task-1
 
-#### Components used
-#### How it works
-#### Implementation
 
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+  
   
 A servo-controlled tilt bracket with an Arduino Uno and joystick module.The working principal of this project is to enable an object to rotate 180 degree in both x and y directions. We mount our laser pointer to the top and simple joystick to control the bracket’s direction
 
@@ -87,4 +88,21 @@ Moisture sensor is connected to A0 pin, water pump is connected to relay which i
 
 DHT11 sensor library is used to program ESP8266. In this project ThingSpeak Server is used, its API key is taken to communicate wth its server. Wi-Fi credentials and sensor pins are defined.In this project millis() is used instead of delay(). delay() will haut the function so we can't read sensor values during this period. This problem will not occur when we use millis().Connect to Wi-Fi with the given credentials.Initially turn off the motor and start the DHT11 sensor reading temperature and humidity data and save them into variables.Read the moisture reading from sensor and save the reading.
 If the moisture reading is in between the required soil moisture range then keep the pump off or if it goes beyond the required moisture then turn the pump ON.Now after every 10 seconds call the sendThingspeak() function to send the moisture, temperature and humidity data is sent to ThingSpeak server.
+
+
+## Project-5:
+### [Optical Character Recognition](https://circuitdigest.com/microcontroller-projects/optical-character-recognition-ocr-using-tesseract-on-raspberry-pi)
+
+In this project we will make RPi to read the data present in a image using Tesseract. 
+
+This project can be further improved by image processing and use for face detection and security purposes.  
+#### Components used
+RPi
+
+#### How it works
+
+Tesseract 4.0 uses a Deep Learning model to recognize characters and even handwritings. Tesseract 4.0 uses Long Short-Term Memory (LSTM) and Recurrent Neural Network (RNN) to improve the accuracy of its OCR engine.OpenCV is used to remove noise from the program and then configure the Tesseract OCR engine based on the image to get better results
+
+#### Implementation 
  
+OpenCV library is installed in RPi.Installing Tesseract OCR engine in RPi to perform Optical Character Recognition. Then install PyTesseract which helps to use Tesseract in python. Pillow should be installed initially.Pytesseract allows us to configure the Tesseract OCR engine by setting the flags which changes the way in which the image is searched for characters. The three main flags used in a Tesseract OCR that is language (-l), OCR Engine Mode (--oem) and Page Segmentation Mode (- -psm). language flag is used to set language, is it possible to recognise two or more language in same image. OCR engine has four modes, in this project we use neural networks. Page segmentation mode flag is very important it can used to find details from image that has so much background details along with the characters or the characters are written in different orientation or size.It has 14 different mode, in this project 'sparse text with OSD' mode is selected. OpenCV can be combined with tesseract to get better results. 
