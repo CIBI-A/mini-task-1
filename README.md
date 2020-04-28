@@ -106,3 +106,22 @@ Tesseract 4.0 uses a Deep Learning model to recognize characters and even handwr
 #### Implementation 
  
 OpenCV library is installed in RPi.Installing Tesseract OCR engine in RPi to perform Optical Character Recognition. Then install PyTesseract which helps to use Tesseract in python. Pillow should be installed initially.Pytesseract allows us to configure the Tesseract OCR engine by setting the flags which changes the way in which the image is searched for characters. The three main flags used in a Tesseract OCR that is language (-l), OCR Engine Mode (--oem) and Page Segmentation Mode (- -psm). language flag is used to set language, is it possible to recognise two or more language in same image. OCR engine has four modes, in this project we use neural networks. Page segmentation mode flag is very important it can used to find details from image that has so much background details along with the characters or the characters are written in different orientation or size.It has 14 different mode, in this project 'sparse text with OSD' mode is selected. OpenCV can be combined with tesseract to get better results. 
+
+## Project-6:
+### [Blind Stick Navigator](https://www.hackster.io/mero/blind-stick-navigator-b119f5)
+
+A blind assist tool that provide obstacles notification and GPS location to the guardian / authority via SMS.
+
+#### Components used
+
+1Sheeld, Arduino UNO, Relay, Toggle switch, 2 Ultrasonic sensor, DC  motor  
+#### How it works
+Ultrasonic sensors emit short, high-frequency sound pulses at regular intervals. These propagate in the air at the velocity of sound. If they strike an object, then they are reflected back as echo signals to the sensor, which itself computes the distance to the target based on the time-span between emitting the signal and receiving the echo.
+
+1Sheeld is a new easily configured shield for Arduino. It is connected to a mobile app that allow the usage of all of Android smartphones' capabilities such as LCD Screen, Gyroscope, Switches, LEDs, Accelerometer, Magnetometer, GSM, Wi-Fi, GPS …etc. into your Arduino sketch. 
+
+#### Implementation
+
+2 Ultrasonic sensor(input) are used one at ground level and other at head level.DC motor(output) is connected to Arduino through relay. Whenever ultasonic sensor detects object within some specific distance then motor starts to vibrate to warn blind people. Toggle switch is used, whenever blind people feels that they have lost route or feel like stuck somewhere if they switch on the toggle it will send 'GPS location' to guardian via sms. This can be implented using 1Sheeld.   
+
+
