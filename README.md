@@ -65,4 +65,26 @@ LCD is interfaced with RPi and speaker is connected to RPi through AUX cable.
 RPi is flashed with Rasbian Jessie and connected to the internet.LCD is interfaced with RPi to display time and date. Text To speech (TTS) Engine is to be used to make Pi speak. In this project Espeak Engine is installed. GUI is developed using python so the user can to view time and date which will be displayed in LCD. GUI is designed using Qt designer software. In Python code the necessary libraries(PyQt4,espeak and strftime) are imported, Qt designer makes the code simply by converting the GUI into necassary python code and editing a little bit of code to assign the purpose of widget used is needed to be done and the text is added which will be delivered as speech by speaker when the alarm triggers.
 
 Make sure Espeak and PyQt4 is installed in Pi and run the python program.
+
+## Project-4:
+### [IOT based Irrigation system](https://circuitdigest.com/microcontroller-projects/iot-based-smart-irrigation-system-using-esp8266-and-soil-moisture-sensor)
+
+#### Components used
+
+NodeMCU ESP8266,
+Soil Moisture Sensor Module,
+Water Pump Module,
+Relay Module,
+DHT11,
+
+#### How it works
+
+The **DHT11** is a digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin. **Relay** is a switch which controls (open and close) circuits electromechanically. The main operation of this device is to make or break contact with the help of a signal without any human involvement in order to switch it ON or OFF.The **Soil Moisture** Sensor uses capacitance to measure dielectric permittivity of the surrounding medium. In soil, dielectric permittivity is a function of the water content. The sensor creates a voltage proportional to the dielectric permittivity
+
+#### Implementation
+
+Moisture sensor is connected to A0 pin, water pump is connected to relay which is connected D0 pin and DHT11 sensor is connected to D3 pin of NodeMCU.
+
+DHT11 sensor library is used to program ESP8266. In this project ThingSpeak Server is used, its API key is taken to communicate wth its server. Wi-Fi credentials and sensor pins are defined.In this project millis() is used instead of delay(). delay() will haut the function so we can't read sensor values during this period. This problem will not occur when we use millis().Connect to Wi-Fi with the given credentials.Initially turn off the motor and start the DHT11 sensor reading temperature and humidity data and save them into variables.Read the moisture reading from sensor and save the reading.
+If the moisture reading is in between the required soil moisture range then keep the pump off or if it goes beyond the required moisture then turn the pump ON.Now after every 10 seconds call the sendThingspeak() function to send the moisture, temperature and humidity data is sent to ThingSpeak server.
  
