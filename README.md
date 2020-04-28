@@ -144,10 +144,23 @@ The Arduino pin 5 is connected to the one end of the doorbell switch, and the ot
 
 
 ## Project-8:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Smart Lamp](https://www.instructables.com/id/IRIS-the-Lamp-That-Knows-When-Yourre-Around/)
+
+Automatic detection of the user to turn on / off the light
+Automatically lights up your path when you want to go somewhere in the middle of the night
+Automatically adjusts brightness based on surrounding light
+Can turn on smart mode automatically after sunset or when no other light source is around.
 #### Components used
+Arduino Uno,
+2 Warm white LED strip,
+Single channel Relay,
+Proximity sensor,
+LDR sensor
 #### How it works
+An LDR is a component that has a (variable) resistance that changes with the light intensity that falls upon it.A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation (infrared, for instance), and looks for changes in the field or return signal.
 #### Implementation
+
+A proximity sensor is placed under the table and connected to Arduino as input. Bulb(output) is connected to Arduino through relay. Bulb is made of two white LED strip stuck on aluminum.To adjust brightness LDR is used and the lamp should now be powered directly from the Arduino for which another relay can be used. You can use PWM to adjust the brightness of the lamp based on the analog input from LDR.
 
 ## Project-9:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
