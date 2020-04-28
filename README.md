@@ -160,106 +160,143 @@ LDR sensor
 An LDR is a component that has a (variable) resistance that changes with the light intensity that falls upon it.A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation (infrared, for instance), and looks for changes in the field or return signal.
 #### Implementation
 
-A proximity sensor is placed under the table and connected to Arduino as input. Bulb(output) is connected to Arduino through relay. Bulb is made of two white LED strip stuck on aluminum.To adjust brightness LDR is used and the lamp should now be powered directly from the Arduino for which another relay can be used. You can use PWM to adjust the brightness of the lamp based on the analog input from LDR.
+A proximity sensor is placed under the table and connected to Arduino as input.So whenever it detects an object nearby Bulb will glow for 15 seconds and after 15 seconds if the sensor is high bulb will glow orelse it will switch off. Bulb(output) is connected to Arduino through relay. Bulb is made of two white LED strip stuck on aluminum.To adjust brightness LDR is used and the lamp should now be powered directly from the Arduino for which another relay can be used. You can use PWM to adjust the brightness of the lamp based on the analog input from LDR.
 
 ## Project-9:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Coronavirus Live Updator](https://www.hackster.io/isaichakri/coronavirus-live-updator-7febb3)
+
+This project does two functions one it's a live updator and trigger the buzzer if the no of cases increases 500 people for like 10min.
+
 #### Components used
-#### How it works
+NodeMCU,
+Nokia LCD 5110
+
 #### Implementation
 
+NodeMCU and Nokia LCD are connected(CLK to D4,
+DIN to D3,
+RESET to D0,
+DC to D2,
+CE to D1).Network credentials are given to enable internet connection. The neccesary libraries are included to connect to the server, fetch data and display in LCD
+.In python code we will add the URL providing the real time data of different countries across the world and display it in the LCD of each country for some specific time.
+
 ## Project-10:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Follow The Leader](https://diyodemag.com/projects/follow_the_leader)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-11:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-12:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Non-contact IR Thermometer](https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor)
 #### Components used
+
+Arduino Pro Mini
+MLX90614 Infrared Temperature Sensor
+OLED Display 
+Laser Diode
+Push button
 #### How it works
+
+The MLX90614 is one such sensor that uses IR energy to detect the temperature of an object.
+IR temperature sensors work by focusing the infrared energy emitted by an object onto one or more photodetectors.The emitted infrared energy of any object is proportional to its temperature, the electrical signal provides an accurate reading of the temperature of the object that it is pointed at.The computational unit converts it into temperature value using a 17-bit in-built ADC and outputs the data through I2C communication protocol
 #### Implementation
+
+OLED,IR temperature sensor and laser diode are connected with Arduino. Push button is also used, whenever it is pressed sensor sends the data to Arduino and displays the output(temperature of pointed object) in OLED. In this project 9V battery is used so when the push button is pressed the 9V battery is connected to the RAW pin of Arduino which is then regulated to 5V using the on-board voltage regulator.
+
 
 ## Project-13:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Gesture Remote-control](https://www.circuito.io/blog/gesture-remote-control/)
+This project is used to control the TV using gesture.
 #### Components used
-#### How it works
+SparkFun APDS-9960 - RGB and Gesture Sensor,
+Infrared (IR) LED,
+IR Receiver Diode - TSOP38238,
+Lithium Battery, 
+Arduino Pro Mini 328,
+220 Ohm Resistor,
+Transistor - NPN BC337,
+
+
 #### Implementation
+Gesture sensor is connected to Arduino.IR LED is connected to Arduino through resistor and transistor. Power supply for the Arduino is given by Lithium battery.To use this gesture control remote we need to find which IR signals needed to be transmitted. This is done by connecting IR receiver to Arduino and uploaded the IR Receive Dump code example from the IR remote library.
+Opening the serial monitor on the Arduino IDE and clicking on the original TV remote buttons we can determine which IR codes are used for each remote function.And in the code we define functions for different gestures like Waving left or right, lets you swap between different channels
+Waving up and down controls the volume
+
 
 ## Project-14:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Raspberry Pi TrafficLight](https://www.electronicsforu.com/electronics-projects/python-computer-vision-based-traffic-light-using-raspberry-pi)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-15:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Fire Fighting Robot](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-16:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [AWS IoT Arduino library for ESP32](https://www.hackster.io/brunov/aws-iot-arduino-library-for-esp32-f15842)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-17:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Wireless RF Communication](https://circuitdigest.com/microcontroller-projects/wireless-rf-communication-between-arduino-and-raspberry-pi-using-nrf24l01)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-18:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Distributed Sensor Network](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-19:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Raspberry Pi Network Video Event Recorder](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-20:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Virtual Assistant](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-21:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [EVIL FRUIT BOWL](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-22:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [HiFi Multi-room WiFi & Bluetooth Speaker](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-23:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [NodeMCU WiFi Manager to Scan and Connect to Wi-Fi Networks](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-24:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Speed, Distance and Angle Measurement](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-25:
-### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Metal Detector using Arduino](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
 #### Components used
 #### How it works
 #### Implementation
