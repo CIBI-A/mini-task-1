@@ -40,6 +40,29 @@ Camera trap is essentially an autonomous DSLR camera with a sensor built in to d
 
 #### How it works
 
-PIR sensor generates voltage when it detects change in the heat 
+PIR sensor generates voltage when it detects change in the heat. 2.5 mm audio plug is used in which the tip is shutter, ring is focus and sleeve in camera ground.The tip and ring connection on the plug shown here are held to 3.3V via a pullup resistor. The camera has a physical switch with two positions; the first position allows the camera to automatically focus (AF) the shot based on your AF settings, and the second position signals the camera to actuate the shutter mechanism. Optocouplers are used to isolate out circuit from camera's internal circuit because cameras are very expensive. Resistors are chosen from the conditions given in datasheet in this project 100kohm is used.  
 #### Implementation
+
+PIR sensor is connected to input pin and optocouplers pin 1 is connnected output pins. Pin 5 of optocouplers are connected to focus and shutter and pin 4 is connected to sleeve. In code **focus time** (number of milliseconds between triggering the focus function and then taking the picture),**min time** (delay after triggering and is used to prevent the same trigger event causing multiple unwanted camera triggers),**shots** (number of photos that will be taken after a trigger event),**pause** (used to set the time between shots and gives the camera sufficient time to write to the memory card, and to detect that the shutter pin has changed states), these value should be chosen as per camera. When PIR sensor detects high ,program pulls the focus to camera ground and wait till focus time ,then pulls the shutter and pauses and this repeats whenever the PIR sense.
+
+## Project-3:
+### [RPi based Jarvis themed speaking Alarm clock](https://circuitdigest.com/microcontroller-projects/raspberry-pi-based-jarvis-themed-speaking-alarm-clock)
+
+As name suggects this is alarm clock which has a voice. Whenever alarm goes it tells the time, day and some predefined text 
+
+#### Components used
+
+Raspberry Pi,
+3.5” TFT LCD Screen,
+Speaker,
+AUX cable,
+Internet Connection,
+
+#### Implementation
+
+LCD is interfaced with RPi and speaker is connected to RPi through AUX cable.
+
+RPi is flashed with Rasbian Jessie and connected to the internet.LCD is interfaced with RPi to display time and date. Text To speech (TTS) Engine is to be used to make Pi speak. In this project Espeak Engine is installed. GUI is developed using python so the user can to view time and date which will be displayed in LCD. GUI is designed using Qt designer software. In Python code the necessary libraries(PyQt4,espeak and strftime) are imported, Qt designer makes the code simply by converting the GUI into necassary python code and editing a little bit of code to assign the purpose of widget used is needed to be done and the text is added which will be delivered as speech by speaker when the alarm triggers.
+
+Make sure Espeak and PyQt4 is installed in Pi and run the python program.
  
