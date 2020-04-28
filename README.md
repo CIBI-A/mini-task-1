@@ -3,10 +3,6 @@
 
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
-#### Components used
-#### How it works
-#### Implementation
-  
   
 A servo-controlled tilt bracket with an Arduino Uno and joystick module.The working principal of this project is to enable an object to rotate 180 degree in both x and y directions. We mount our laser pointer to the top and simple joystick to control the bracket’s direction
 
@@ -124,4 +120,133 @@ Ultrasonic sensors emit short, high-frequency sound pulses at regular intervals.
 
 2 Ultrasonic sensor(input) are used one at ground level and other at head level.DC motor(output) is connected to Arduino through relay. Whenever ultasonic sensor detects object within some specific distance then motor starts to vibrate to warn blind people. Toggle switch is used, whenever blind people feels that they have lost route or feel like stuck somewhere if they switch on the toggle it will send 'GPS location' to guardian via sms. This can be implented using 1Sheeld.   
 
+## Project-7:
+### [Wireless Doorbell](https://circuitdigest.com/microcontroller-projects/wireless-doorbell-using-arduino)
 
+In this project, we are going to build a Wireless Doorbell using Arduino. We will have a button which when pressed will wirelessly play a melody of our choice to indicate someone is at the door. For wireless connectivity, we will use the 433 MHz RF module.
+#### Components used
+RF module,
+Arduino,
+Buzzer,
+Push-button,
+Breadboard,
+Connecting wires,
+#### How it works
+
+A RF transceiver module will always work in a pair that is it needs a Transmitter and Receiver to send and Send data. A transmitter can only send information and a Receiver and can only receive it, so data can always be sent from one end to another and not the other way around.
+A transmitter consists of a SAW resonator, which is tuned to 433MHz frequency, a switching circuit, and a few passive components.When the input to the data pin is HIGH, the switch will act as a short circuit and the oscillator runs which produces a fixed amplitude carrier wave and a fixed frequency for some period of time.
+An RF receiver is a simple circuit that consists of an RF tuned circuit, an amplifier circuit, and a phase lock loop circuit.With all these components, the receiver receives the signal from the antenna which is  then tuned by RF tuned circuit and this weak signal is amplified using OP-Amp, and this amplified signal is further used as input to PLL, which makes the decoder to lock onto the incoming digital bits which gives an output which is less in noise.
+
+ASK(Amplitude Shift Keying) Modulation is used in transmitter 
+
+#### Implementation
+The Arduino pin 5 is connected to the one end of the doorbell switch, and the other end of the switch is connected to the supply voltage. A pull-down resistor of 10kohm is connected to pin 5 as shown in the fig. Pin 11 is connected to the data pin of the transmitter module. Vcc is connected to the supply voltage, and the ground pin of the transmitter module is grounded.In receiver side, we connect pin 7 of the Arduino to the buzzer positive terminal, and the negative terminal is grounded. A supply voltage of VCC is given to the receiver module, and the GND pin of the module is connected to the ground. The out pin of the receiver module is connected to the 12th pin of the Arduino.
+
+
+## Project-8:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-9:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-10:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-11:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-12:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-13:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-14:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-15:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-16:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-17:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-18:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-19:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-20:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-21:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-22:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-23:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-24:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
+
+## Project-25:
+### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+#### Components used
+#### How it works
+#### Implementation
