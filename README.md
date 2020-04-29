@@ -277,9 +277,17 @@ One Connector (CON1) provides convenience for connecting antenna of the RF trans
 
 ## Project-17:
 ### [Wireless RF Communication](https://circuitdigest.com/microcontroller-projects/wireless-rf-communication-between-arduino-and-raspberry-pi-using-nrf24l01)
+We will use nRF24L01 – 2.4GHz RF Transceiver module with Arduino UNO and Raspberry Pi to establish a wireless communication between them.
 #### Components used
+nRF24L01 RF Module
+Rpi,
+Arduino
 #### How it works
+nRF24L01 modules operate on 2.4GHz (ISM band) with baud rate from 250Kbps to 2Mbps and with proper antennas these modules can transmit and receive signals upto a distance of 100 meters between. .They are half-duplex they can either send or receive data at a time. nRF24L01 IC communicates using the SPI protocol
 #### Implementation
+nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I2C protocol. Even RPi uses SPI interface to connect nRF24l01.Python 3 will used to program because it already has the library.Message is sent using Raspberry Pi & nRf24l01 and receiving it using Arduino UNO & nRF24l01. The message will be printed in the 16x2 LCD.
+
+
 
 ## Project-18:
 ### [Distributed Sensor Network](https://diyodemag.com/projects/distributed_sensor_network)
@@ -326,12 +334,13 @@ L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 3 fire sensors are placed in different directions so that if fire from any of those directions could be detected. When fire is detected we move the robot to that direction using motor through L293D motor driver module. we use a small container which can carry water, a 5V pump is also placed in the container and the whole container is placed on top of a servo motor so that we can control the direction in which the water has to be sprayed.
 
 ## Project-22:
-### [Portable WiFi & Bluetooth Speaker](https://www.instructables.com/id/Portable-Bluetooth-WiFi-Speaker-Build-FREE-PLANS/)
+### [HiFi Multi-room WiFi & Bluetooth Speaker](https://www.instructables.com/id/HiFi-Multi-room-WiFi-Bluetooth-Speaker/)
 #### Components used
 WiFi Audio Receiver,
 Audio Amplifier Board,
 2Pcs 6 Inch 40W Speaker,
 3.5mm 1/8" Jack to 2 Male Stereo Phono Audio Speaker Adapter CABLE,
+5V regulator
 #### How it works
 #### Implementation
 
