@@ -182,20 +182,21 @@ CE to D1).Network credentials are given to enable internet connection. The necce
 
 ## Project-10:
 ### [DTMF Controlled Robot](https://www.electronicshub.org/dtmf-mobile-controlled-robot-without-microcontroller/)
-The four switches are arranged in a diamond pattern. Under control of the Arduino, a progressively more complicated pattern of LEDs and sounds is presented to the user. Now it’s your turn to press the buttons to reproduce the sequence. Pressing the buttons will illuminate the LEDs. If you get the sequence correct, another step is added and the process continues. You win the game if you can repeat the whole sequence without error
+In this project we will design a simple Robotic vehicle that can be controlled using a phone without using microcontroller.
 #### Components used
-Arduino UNO, 
-4 colour Push Button Switch,	
-2N2222 Transistors,
-resistors,
-10k Linear Potentiometer,	
-Piezo Buzzer,
+DTMF Tone decoder IC,
+Motor driver IC,
+Motors
 
 #### How it works
+When a key is pressed from our mobile, it generates a tone, which is a combination of two frequencies, one is high frequency and another one is low frequency. This frequency can be decoded by the decoder IC into binary sequence. Using this binary sequence, the robot is controlled.
 #### Implementation
+Decoder IC is The decoder IC internally, consists of operational amplifier, whose output is given to pre filters to separate low and high frequencies. Then it is passed to code detector circuit and it decodes the incoming tone into 4bits of binary data. This data at the output is directly given to the driver IC to drive the two motors.
 
 ## Project-11:
 ### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
+Sketching a picture on LED matrix using rotary encoders.
+
 #### Components used
 RPi 3,
 Adafruit RGB matrix,
@@ -203,8 +204,9 @@ Arduino nano,
 Rotary encoder with push buttons,
 DFRobot 64 x 64 RGB LED Matrix Panel,
 DFRobot 6 DOF sensor- MPU6050
-#### How it works
+
 #### Implementation
+Connect RPi to Wi-fi and install rgb-matrix library and select the Adafruit Matrix HAT.Also install mpu6050 library. GPIO pins are short to connect rotary encoder because the RGB matrix takes up so many GPIO pins so Arduino nano is used as I2C slave device that would be able to count the rotations of each encoder and then send that information to the host device when requested. Upon each request for encoder data, the total number of rotations is set back to zero, which gives relative positional data rather than absolute positioning. If the device detects it is being shaken(DOF sensor is used for this), 5 random lit-up pixels are selected and then turned off. To erase the entire matrix and return the cursor to its origin (0, 0), the hardware button can be held down for two seconds.
 
 ## Project-12:
 ### [Non-contact IR Thermometer](https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor)
@@ -257,7 +259,7 @@ If the system get that the number of people is greater than the 3(can be changed
 RPi is installed with Raspbian os and with Python3 environment on raspberry pi and OpenCV. After the installation you can now proceed with the cloning of TF modules. In python we will add necessary libraries and next we will set the path for tensor flow detection modules and then we will set the name and path for labels. Next part of code will check the camera video and cut it in various frames and after that we have code that will try to detect the objects in each frame and then map with the labels. Now in next part of the code we check the label of object detected and here we have set a substring ie “person” we use this substring to count the number of people in image.
 
 ## Project-15:
-### [Virtual Assistant]()
+### [Virtual Assistant](https://www.instructables.com/id/Pi-Home-a-Raspberry-Powered-Virtual-Assistant/)
 #### Components used
 #### How it works
 #### Implementation
@@ -280,7 +282,7 @@ One Connector (CON1) provides convenience for connecting antenna of the RF trans
 #### Implementation
 
 ## Project-18:
-### [Distributed Sensor Network]()
+### [Distributed Sensor Network](https://diyodemag.com/projects/distributed_sensor_network)
 #### Components used
 #### How it works
 #### Implementation
@@ -291,12 +293,19 @@ One Connector (CON1) provides convenience for connecting antenna of the RF trans
 #### How it works
 #### Implementation
 
-## Project-20:
+## Project-20:  
 ### [RFID Based Attendance System](https://www.electronicshub.org/rfid-based-attendance-system/)
-#### Components used
+ATMEGA8 Microcontroller,
+RFID Reader,
+RFID Tags,
+LCD display
 #### How it works
+RFID or Radio Frequency Identification System is a technology based identification system which helps identifying objects just through the tags attached to them, without requiring any light of sight between the tags and the tag reader. All that is needed is radio communication between the tag and the reader.RFID can be interfaced to microcontroller through USART. Data is transferred from RFID cards to reader and from there to microcontroller.
 #### Implementation
 
+The RFID Reader is connected to the transmit and receive pins of the micro controller.When this circuit is powered ON, initially the microcontroller will display the message as Swipe the card on the LCD display. When the RFID reader detects the ID card, it will send the unique card no to the microcontroller via serial terminal.Microcontroller compares the tag with the database. If the tag is matched LCD displays “authenticated” and takes your attendance
+Now place another card which is not present in the database and check for authentication.
+Now LCD displays “Unauthorised” and it will never take the attendance.This way we can take attendance
 
 ## Project-21:
 ### [Fire Fighting Robot](https://circuitdigest.com/microcontroller-projects/arduino-fire-fighting-robot-code)
@@ -317,7 +326,7 @@ L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 3 fire sensors are placed in different directions so that if fire from any of those directions could be detected. When fire is detected we move the robot to that direction using motor through L293D motor driver module. we use a small container which can carry water, a 5V pump is also placed in the container and the whole container is placed on top of a servo motor so that we can control the direction in which the water has to be sprayed.
 
 ## Project-22:
-### [HiFi Multi-room WiFi & Bluetooth Speaker]()
+### [Portable WiFi & Bluetooth Speaker](https://www.instructables.com/id/Portable-Bluetooth-WiFi-Speaker-Build-FREE-PLANS/)
 #### Components used
 WiFi Audio Receiver,
 Audio Amplifier Board,
@@ -325,6 +334,7 @@ Audio Amplifier Board,
 3.5mm 1/8" Jack to 2 Male Stereo Phono Audio Speaker Adapter CABLE,
 #### How it works
 #### Implementation
+
 
 ## Project-23:
 ### [NodeMCU WiFi Manager to Scan and Connect to Wi-Fi Networks](https://circuitdigest.com/microcontroller-projects/using-wifi-manager-on-nodemcu-to-scan-and-connect-wifi-networks)
