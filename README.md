@@ -181,14 +181,28 @@ CE to D1).Network credentials are given to enable internet connection. The necce
 .In python code we will add the URL providing the real time data of different countries across the world and display it in the LCD of each country for some specific time.
 
 ## Project-10:
-### [Follow The Leader](https://diyodemag.com/projects/follow_the_leader)
+### [DTMF Controlled Robot](https://www.electronicshub.org/dtmf-mobile-controlled-robot-without-microcontroller/)
+The four switches are arranged in a diamond pattern. Under control of the Arduino, a progressively more complicated pattern of LEDs and sounds is presented to the user. Now it’s your turn to press the buttons to reproduce the sequence. Pressing the buttons will illuminate the LEDs. If you get the sequence correct, another step is added and the process continues. You win the game if you can repeat the whole sequence without error
 #### Components used
+Arduino UNO, 
+4 colour Push Button Switch,	
+2N2222 Transistors,
+resistors,
+10k Linear Potentiometer,	
+Piezo Buzzer,
+
 #### How it works
 #### Implementation
 
 ## Project-11:
 ### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
 #### Components used
+RPi 3,
+Adafruit RGB matrix,
+Arduino nano,
+Rotary encoder with push buttons,
+DFRobot 64 x 64 RGB LED Matrix Panel,
+DFRobot 6 DOF sensor- MPU6050
 #### How it works
 #### Implementation
 
@@ -231,21 +245,33 @@ Waving up and down controls the volume
 
 ## Project-14:
 ### [Raspberry Pi TrafficLight](https://www.electronicsforu.com/electronics-projects/python-computer-vision-based-traffic-light-using-raspberry-pi)
+Many time it is seen the people are waiting at crossing  to get the traffic clear and the people have to wait and keep standing for an hours to cross the road it become more complicated when any child and old women have to wait for long time to cross the road so today we are going to Raspberry Pi TrafficLight Using TensorFlow & Python that checks how many people are waiting at zebra crossing and from how long they are waiting at zebra crossing and  give priority to people rather than vehicles accordingly.
 #### Components used
+Raspberry Pi 4,
+RPi camera
 #### How it works
+First a camera streams the live video at zebra crossing 
+Then that video is cut in certain frames and a tensorflow with computer vision modules checks the number of people and time from which they are waiting to cross the 
+If the system get that the number of people is greater than the 3(can be changed ) waiting at zebra crossing then it give priority to them. If the number of people at zebra crossing is below 3 but waiting for more than 60 seconds (can be changed)  then it give priority to them in crossing.
 #### Implementation
+RPi is installed with Raspbian os and with Python3 environment on raspberry pi and OpenCV. After the installation you can now proceed with the cloning of TF modules. In python we will add necessary libraries and next we will set the path for tensor flow detection modules and then we will set the name and path for labels. Next part of code will check the camera video and cut it in various frames and after that we have code that will try to detect the objects in each frame and then map with the labels. Now in next part of the code we check the label of object detected and here we have set a substring ie “person” we use this substring to count the number of people in image.
 
 ## Project-15:
-### [Fire Fighting Robot](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Virtual Assistant]()
 #### Components used
 #### How it works
 #### Implementation
 
-## Project-16:
-### [AWS IoT Arduino library for ESP32](https://www.hackster.io/brunov/aws-iot-arduino-library-for-esp32-f15842)
+
+## Project-16: 
+### [TDS Meter Using MCU](https://www.electronicsforu.com/electronics-projects/implementing-low-cost-battery-powered-tds-meter-using-mcu-psoc)
+433MHz radio frequency (RF) modules are widely used in different wireless projects and products. Normal range of most RF transmitter and receiver modules is below fifty metres. This RF Range Extender circuit can increase the range of operation to almost double the normal range, depending on make of the RF module and antenna used.
 #### Components used
+Transistors - 2570(T1) and 2N5109(T2)
+
 #### How it works
 #### Implementation
+One Connector (CON1) provides convenience for connecting antenna of the RF transmitter module. Another Connector (CON2) is used for connecting 5V DC power supply, while another Connector (CON3) is used to connect the dipole antenna.The circuit is a two-stage ultra high frequency (UHF) amplifier. Both T1 and T2 are wired as class A amplifiers. Maximum range can be obtained by using a dipole antenna (DP)
 
 ## Project-17:
 ### [Wireless RF Communication](https://circuitdigest.com/microcontroller-projects/wireless-rf-communication-between-arduino-and-raspberry-pi-using-nrf24l01)
@@ -254,49 +280,95 @@ Waving up and down controls the volume
 #### Implementation
 
 ## Project-18:
-### [Distributed Sensor Network](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Distributed Sensor Network]()
 #### Components used
 #### How it works
 #### Implementation
 
-## Project-19:
-### [Raspberry Pi Network Video Event Recorder](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+## Project-19: 
+### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
 #### Components used
 #### How it works
 #### Implementation
 
 ## Project-20:
-### [Virtual Assistant](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [RFID Based Attendance System](https://www.electronicshub.org/rfid-based-attendance-system/)
 #### Components used
 #### How it works
 #### Implementation
+
 
 ## Project-21:
-### [EVIL FRUIT BOWL](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Fire Fighting Robot](https://circuitdigest.com/microcontroller-projects/arduino-fire-fighting-robot-code)
+A robot using Arduino that could move towards the fire and pump out water around it to put down the fire
 #### Components used
+Arduino UNO,
+Fire sensor or Flame sensor, 
+Servo Motor,
+L293D motor Driver module,
+Mini DC Submersible Pump,
+Small Breadboard,
+Robot chassis with motors (2) and wheels(2),
+A small can
 #### How it works
+This sensor has an IR Receiver (Photodiode) which is used to detect the fire. When fire burns it emits a small amount of Infra-red light, this light will be received by the IR receiver on the sensor module. Then we use an Op-Amp to check for change in voltage across the IR Receiver, so that if a fire is detected the output  pin (DO) will give 0V(LOW) and if the is no fire the output pin will be 5V(HIGH).
+L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 #### Implementation
+3 fire sensors are placed in different directions so that if fire from any of those directions could be detected. When fire is detected we move the robot to that direction using motor through L293D motor driver module. we use a small container which can carry water, a 5V pump is also placed in the container and the whole container is placed on top of a servo motor so that we can control the direction in which the water has to be sprayed.
 
 ## Project-22:
-### [HiFi Multi-room WiFi & Bluetooth Speaker](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [HiFi Multi-room WiFi & Bluetooth Speaker]()
 #### Components used
+WiFi Audio Receiver,
+Audio Amplifier Board,
+2Pcs 6 Inch 40W Speaker,
+3.5mm 1/8" Jack to 2 Male Stereo Phono Audio Speaker Adapter CABLE,
 #### How it works
 #### Implementation
 
 ## Project-23:
-### [NodeMCU WiFi Manager to Scan and Connect to Wi-Fi Networks](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [NodeMCU WiFi Manager to Scan and Connect to Wi-Fi Networks](https://circuitdigest.com/microcontroller-projects/using-wifi-manager-on-nodemcu-to-scan-and-connect-wifi-networks)
+
+As we know most of the IoT devices have to be connected to the internet to begin operation. While prototyping or testing our IoT Projects we can easily hardcode the Wi-Fi SSID and Password in our program and make it work. But when the device is handed over to the consumer, they should be able to scan and connect to own Wi-Fi Network without changing the program. This is where the ESP8266 Wi-Fi manager will be helpful.In this project, we are going to use NodeMCU, and program it to operate in two different modes, namely Access point (AP) mode, and Station (STA) mode
+
 #### Components used
-#### How it works
+
+NodeMCU,
+Breadboard,
+Pushbutton,
+LEDs,
 #### Implementation
+Circuit connection is very simple just connect pushbutton and LED with resistors to NodeMCU.
+LEDs are used to indicate whether it is in STA or AP. Pushbutton is used to switch between modes, if we press while switching on NodeMCU will enter AP mode.We are going to code in such a way that, when powering up the module, if the switch is in ON state, it will set the ESP to Access Point (AP) mode and resets the saved settings. It will stay in this mode until unless the user uses a Wi-Fi-enabled device, and connects it to this access point. When connected to this access point, it will redirect the user to a web page, where the user can configure to new SSID and password. After setting the credentials, the ESP will reboot itself and works as a Station (STA) mode.NodeMCU will remeber this Wi-fi credential and whenever we switch on it will automatically connect to that network. By this we can remove the burden of coding every time whenever you need to connect to a new network.
 
 ## Project-24:
-### [Speed, Distance and Angle Measurement](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Illuminated Optical Magnifier](https://www.electronicsforu.com/electronics-projects/illuminated-optical-magnifier)
+This can be used to read the values of ICs and miniature SMD components, detecting cracks or shorts in tracks in a PCB, or reading a finely-graduated vernier scale.This is a simple optical magnifier that simultaneously magnifies and illuminates the object.
 #### Components used
+convex lens (focal length of about 10cm),
+a set of eight white LEDs,
+LED driver circuit
 #### How it works
+An LED driver's main purpose is to rectify higher AC voltage to low DC voltage. LED drivers also protect LEDs from voltage or current fluctuations. LED light output is proportional to its current supply.In this project LED driver is made of 2 capacitors, 4 diodes(IN4007),one inductor and one resistor.
 #### Implementation
+Capacitor C1 at the input reduces the line-input voltage of 230V to a very-low-level AC voltage. The full-wave bridge rectifier, comprising diodes D1 through D4, converts the low-level AC voltage into DC voltage. Another capacitor is used for smoothening. Series current-limiting resistor and series inductor coil to avoid voltage spikes.
+8 LEDs are connected in a circular shape. And convex lens is placed in between the LEDs.
 
 ## Project-25:
-### [Metal Detector using Arduino](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+### [Metal Detector using Arduino](https://circuitdigest.com/microcontroller-projects/arduino-metal-detector-circuit-code)
 #### Components used
+
+Arduino, 
+Coil,
+10nF capacitor,
+Buzzer,
+The 1k resistor,
+330-ohm resistor,
+LED,
+1N4148 diode,
 #### How it works
+Whenever some current passes through the coil, it generates a magnetic field around it. And the change in the magnetic field generates an electric field. Now according to Faraday's law, because of this Electric field, a voltage develops across the coil which opposes the change in magnetic field and that’s how Coil develops the Inductance.When any metal comes near to the coil then coil changes its inductance
+The 1N4148 is a standard silicon switching diode. It is one of the most popular and long-lived switching diodes because of its dependable specifications and low cost. The 1N4148 is useful in switching applications up to about 100 MHz with a reverse-recovery time of no more than 4 ns.
 #### Implementation
+ We will use a LR circuit.We have used an Arduino Nano for controlling whole this Metal Detector Project. A LED and Buzzer are used as metal detection indicator. A Coil and capacitor is used for detection of metals. A signal diode is also used for reduce the voltage. And a resistor for limiting the current to the Arduino pin. A pulse is sent by Arduino to LR high pass filter and short spikes will be generated. The pulse length of the generated spikes is proportional to the inductance of the coil. a capacitor which is charged by the rising pulse or spike. And it required few pulses to charge the capacitor to the point where its voltage can be read by Arduino analog pin A5. Then Arduino read the voltage of this capacitor by using ADC. After reading voltage, capacitor quickly discharged by making capPin pin as output and setting it to low. We repeat measurement and took an average of the results. That’s how we can measure the approximate inductance of Coil. After getting the result we transfer the results to the LED and buzzer to detect the presence of metal. 
+
