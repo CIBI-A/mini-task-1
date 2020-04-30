@@ -228,7 +228,7 @@ OLED,IR temperature sensor and laser diode are connected with Arduino. Push butt
 
 ## Project-13:
 ### [Gesture Remote-control](https://www.circuito.io/blog/gesture-remote-control/)
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/Gesture_remote.jpg" width="300" height="200">
 
 This project is used to control the TV using gesture.
 #### Components used
