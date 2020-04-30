@@ -48,7 +48,7 @@ PIR sensor is connected to input pin and optocouplers pin 1 is connnected output
 
 ## Project-3:
 ### [RPi based Jarvis themed speaking Alarm clock](https://circuitdigest.com/microcontroller-projects/raspberry-pi-based-jarvis-themed-speaking-alarm-clock)
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/Raspberry-Pi-based-Jarvis-themed-Speaking-Alarm-Clock.jpg" width="300" height="200">
 
 As name suggects this is alarm clock which has a voice. Whenever alarm goes it tells the time, day and some predefined text 
 
