@@ -1,5 +1,9 @@
 # mini-task-1
 
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+
+![Nairobi](https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg)
+
 
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
