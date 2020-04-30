@@ -198,6 +198,8 @@ Decoder IC is The decoder IC internally, consists of operational amplifier, whos
 ### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
 ![](https://media.giphy.com/media/fZ8ouCSolChraFvA2F/giphy.gif)
 
+Using two rotary encoders to draw whatever picture and then shake it to erase the image.
+
 #### Components used
 RPi 3,
 Adafruit RGB matrix,
@@ -308,6 +310,8 @@ nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I
 ## Project-19: 
 ### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
 Creating a RPi based ventilator to overcome the demand of ventilators. It will also be capable of monitoring our health and provide data about our heartbeat and SPO2 levels. 
+
+
 ![](https://media.giphy.com/media/l5I6ojZd05SPAtah6a/giphy.gif)
 
 #### Components used
