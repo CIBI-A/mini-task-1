@@ -48,6 +48,7 @@ PIR sensor is connected to input pin and optocouplers pin 1 is connnected output
 
 ## Project-3:
 ### [RPi based Jarvis themed speaking Alarm clock](https://circuitdigest.com/microcontroller-projects/raspberry-pi-based-jarvis-themed-speaking-alarm-clock)
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
 
 As name suggects this is alarm clock which has a voice. Whenever alarm goes it tells the time, day and some predefined text 
 
@@ -232,6 +233,8 @@ OLED,IR temperature sensor and laser diode are connected with Arduino. Push butt
 
 ## Project-13:
 ### [Gesture Remote-control](https://www.circuito.io/blog/gesture-remote-control/)
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+
 This project is used to control the TV using gesture.
 #### Components used
 SparkFun APDS-9960 - RGB and Gesture Sensor,
@@ -276,6 +279,8 @@ RPi is installed with raspbian os.The Pi doesn’t have microphones inbuilt so U
 
 ## Project-16: 
 ### [TDS Meter Using MCU](https://www.electronicsforu.com/electronics-projects/implementing-low-cost-battery-powered-tds-meter-using-mcu-psoc)
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+
 One of the direct methods to measure the quality of water is the measurement of TDS in water
 
 #### How it works
@@ -351,6 +356,8 @@ L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 
 ## Project-22:
 ### [Wi-CASSS](https://www.hackster.io/govindanunni07/wifi-controlled-audio-source-selector-switch-wi-casss-d40ed3)
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+
 Remote WiFi Controlled Audio Source Selector Switch (Wi-CASSS) which enables the user switch between two connected input/output audio devices over internet.
 #### Components used
 DPDT Relay,
