@@ -1,9 +1,5 @@
 # mini-task-1
 
-![EARTH](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.space.com%2F54-earth-history-composition-and-atmosphere.html&psig=AOvVaw1nXU79-e5z_ZM2r9cYHING&ust=1588324853345000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODrn7fpj-kCFQAAAAAdAAAAABAD.jpg)
-
-
-
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
   
@@ -69,6 +65,7 @@ Make sure Espeak and PyQt4 is installed in Pi and run the python program.
 
 ## Project-4:
 ### [IOT based Irrigation system](https://circuitdigest.com/microcontroller-projects/iot-based-smart-irrigation-system-using-esp8266-and-soil-moisture-sensor)
+<img src ="https://circuitdigest.com/sites/default/files/inlineimages/u1/Circuit-Hardware-for-IoT-based-Smart-Irrigation-System-using-Soil-Moisture-Sensor-and-ESP8266-NodeMCU.jpg" width="300" height="200">
 
 #### Components used
 
@@ -199,8 +196,7 @@ Decoder IC is The decoder IC internally, consists of operational amplifier, whos
 
 ## Project-11:
 ### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/PIX-a-sketch.jfif" width="300" height="200">
-Sketching a picture on LED matrix using rotary encoders.
+![](https://media.giphy.com/media/fZ8ouCSolChraFvA2F/giphy.gif)
 
 #### Components used
 RPi 3,
@@ -311,8 +307,9 @@ nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I
 
 ## Project-19: 
 ### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
-![](https://giphy.com/gifs/pulse-godMk62fXqpgY.gif)
 Creating a RPi based ventilator to overcome the demand of ventilators. It will also be capable of monitoring our health and provide data about our heartbeat and SPO2 levels. 
+![](https://media.giphy.com/media/l5I6ojZd05SPAtah6a/giphy.gif)
+
 #### Components used
 RPi,
 Arduino,
@@ -340,6 +337,7 @@ Now LCD displays “Unauthorised” and it will never take the attendance.This w
 ## Project-21:
 ### [Fire Fighting Robot](https://circuitdigest.com/microcontroller-projects/arduino-fire-fighting-robot-code)
 A robot using Arduino that could move towards the fire and pump out water around it to put down the fire
+![](https://media.giphy.com/media/ejE4pfEdKjDDnpcPEr/giphy.gif)
 #### Components used
 Arduino UNO,
 Fire sensor or Flame sensor, 
