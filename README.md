@@ -195,6 +195,7 @@ Decoder IC is The decoder IC internally, consists of operational amplifier, whos
 
 ## Project-11:
 ### [Pix-a-Sketch](https://www.hackster.io/gatoninja236/pix-a-sketch-a-virtual-etch-a-sketch-on-an-led-matrix-dd3bae)
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/PIX-a-sketch.jfif" width="300" height="200">
 Sketching a picture on LED matrix using rotary encoders.
 
 #### Components used
