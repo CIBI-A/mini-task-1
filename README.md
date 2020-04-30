@@ -260,20 +260,25 @@ RPi is installed with Raspbian os and with Python3 environment on raspberry pi a
 
 ## Project-15:
 ### [Virtual Assistant](https://www.instructables.com/id/Pi-Home-a-Raspberry-Powered-Virtual-Assistant/)
-#### Components used
-#### How it works
-#### Implementation
 
+#### Components used
+Raspberry Pi 3,
+MicroSD Card, 
+A USB Microphone,
+Speakers
+
+#### Implementation
+RPi is installed with raspbian os.The Pi doesn’t have microphones inbuilt so USB microphone is attached to record audio.And Set external mic as the audio capture device and your inbuilt sound card as the speaker device. Connect the speaker to 3.5mm jack of RPi and configure it.Python environment is created.In python install the Google Assistant SDK package, which contains all the code required to run the Google Assistant on the Pi. And then enable the google assistant cloud project and Authenticating RPi.Then we will run python script and introduce the Google Assistant.
 
 ## Project-16: 
 ### [TDS Meter Using MCU](https://www.electronicsforu.com/electronics-projects/implementing-low-cost-battery-powered-tds-meter-using-mcu-psoc)
-433MHz radio frequency (RF) modules are widely used in different wireless projects and products. Normal range of most RF transmitter and receiver modules is below fifty metres. This RF Range Extender circuit can increase the range of operation to almost double the normal range, depending on make of the RF module and antenna used.
-#### Components used
-Transistors - 2570(T1) and 2N5109(T2)
+One of the direct methods to measure the quality of water is the measurement of TDS in water
 
 #### How it works
+The MCU will generate the waveform in digital format which get converted to analog by the DAC and passed to opamp.The conductance to voltage conversion is done by giving conductance probe to the feedback loop of opamp. The output of the Op-amp is passed through a rectifier to calculate the RMS value of the received signal. The RMS value of the received signal is then converted to digital value by the ADC.This can be implemented in PSoc.The PSoC is a combination of MCU and programmable analog and digital blocks
+
 #### Implementation
-One Connector (CON1) provides convenience for connecting antenna of the RF transmitter module. Another Connector (CON2) is used for connecting 5V DC power supply, while another Connector (CON3) is used to connect the dipole antenna.The circuit is a two-stage ultra high frequency (UHF) amplifier. Both T1 and T2 are wired as class A amplifiers. Maximum range can be obtained by using a dipole antenna (DP)
+Sine wave samples stored in a LUT in the flash of the MCU send to the DAC. Conductance to voltage conversion circuit can be implemented using the internal Op-amp of PSoC, an external resistance and the conductance probe.An Op-amp based precision rectifier is required. Again the internal Op-amp of the PSoC can be utilized with external two diodes and three resistors.The output of the rectifier stage is fed to the internal ADC of PSoC. The RMS value of the received signal can be calculated by MCU from the ADC output.To measure the RMS value of the transmitted signal, the output of the DAC can be bypassed to the rectifier input using the internal Analog MUX. The conductance value can be calculated from the RMS values of the transmitted and received signals and can be converted to TDS value in ppm.
 
 ## Project-17:
 ### [Wireless RF Communication](https://circuitdigest.com/microcontroller-projects/wireless-rf-communication-between-arduino-and-raspberry-pi-using-nrf24l01)
@@ -297,9 +302,16 @@ nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I
 
 ## Project-19: 
 ### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
+Creating a RPi based ventilator to overcome the demand of ventilators. It will also be capable of monitoring our health and provide data about our heartbeat and SPO2 levels. 
 #### Components used
+RPi,
+Arduino,
+servo motor,
+MAX30100 sensor,
 #### How it works
+Ventilator use a servo motor that applies pressure on an air sack (BVM bag), thus pushing oxygen-concentrated air into the lungs. When the servo motor comes back to its earlier position, it results in pressure being released from the air sack (BVM bag), making it retain its original shape. This helps to draw out CO2 from the lungs.MAX30100 sensor gives us live data about the rise and fall of pulse rate and oxygen level in the blood of a patient
 #### Implementation
+servo motor is interfaed with RPi and the speed of motor is adjust in program to match the respiratory rate of patient.MAX30100 and OLED is interfaced with Arduino and code in arduino IDE . To visualize graph we will setup Processing 3 in RPi and connect the Arduino with MAX30100 into the Raspberry Pi USB port. 
 
 ## Project-20:  
 ### [RFID Based Attendance System](https://www.electronicshub.org/rfid-based-attendance-system/)
@@ -334,16 +346,17 @@ L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 3 fire sensors are placed in different directions so that if fire from any of those directions could be detected. When fire is detected we move the robot to that direction using motor through L293D motor driver module. we use a small container which can carry water, a 5V pump is also placed in the container and the whole container is placed on top of a servo motor so that we can control the direction in which the water has to be sprayed.
 
 ## Project-22:
-### [HiFi Multi-room WiFi & Bluetooth Speaker](https://www.instructables.com/id/HiFi-Multi-room-WiFi-Bluetooth-Speaker/)
+### [Wi-CASSS](https://www.hackster.io/govindanunni07/wifi-controlled-audio-source-selector-switch-wi-casss-d40ed3)
+Remote WiFi Controlled Audio Source Selector Switch (Wi-CASSS) which enables the user switch between two connected input/output audio devices over internet.
 #### Components used
-WiFi Audio Receiver,
-Audio Amplifier Board,
-2Pcs 6 Inch 40W Speaker,
-3.5mm 1/8" Jack to 2 Male Stereo Phono Audio Speaker Adapter CABLE,
-5V regulator
+DPDT Relay,
+ESP8266,
+1N4007 Diode,
+NPN Transistor
 #### How it works
+Double Pole Double Throw(DPDT) Relay switches the Left & Right Channel of the audio signals into two separate channels. Since relays are just an electromechanical switch, they don't distort the audio signals and most importantly, they are bi-directional.
 #### Implementation
-
+Transistor switching circuit is used to switch on/off relay.3.3V regulator is connected to ESP8266.6 pin female header is converted to 2 male 3.5mm audio jack. The ground pin of audio device and power source are isolated so there will be no distortion in audio signal. Output(3.5mm PCB Mountable Female Audio Jack) is connected to speaker. In this ESP is programmed using Arduino nano. Blynk App is used and we can switch the audio device from phone.
 
 ## Project-23:
 ### [NodeMCU WiFi Manager to Scan and Connect to Wi-Fi Networks](https://circuitdigest.com/microcontroller-projects/using-wifi-manager-on-nodemcu-to-scan-and-connect-wifi-networks)
