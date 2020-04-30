@@ -309,6 +309,7 @@ nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I
 
 ## Project-19: 
 ### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
+![](https://giphy.com/gifs/pulse-godMk62fXqpgY.gif)
 Creating a RPi based ventilator to overcome the demand of ventilators. It will also be capable of monitoring our health and provide data about our heartbeat and SPO2 levels. 
 #### Components used
 RPi,
