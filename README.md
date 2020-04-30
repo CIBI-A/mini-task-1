@@ -274,7 +274,7 @@ RPi is installed with raspbian os.The Pi doesn’t have microphones inbuilt so U
 
 ## Project-16: 
 ### [TDS Meter Using MCU](https://www.electronicsforu.com/electronics-projects/implementing-low-cost-battery-powered-tds-meter-using-mcu-psoc)
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/TDS.png" width="300" height="200">
 
 One of the direct methods to measure the quality of water is the measurement of TDS in water
 
