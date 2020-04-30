@@ -1,5 +1,7 @@
 # mini-task-1
 
+![gif](https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.gr-assets.com%2Fimages%2FS%2Fcompressed.photo.goodreads.com%2Fbooks%2F1317066485l%2F7099898.jpg&imgrefurl=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F7099898-eaarth&tbnid=3xeYFB9WTz8WaM&vet=12ahUKEwjhjK_A5Y_pAhWVmUsFHTdZC4UQMygAegUIARDRAQ..i&docid=_Jg2-p5Wbs87-M&w=312&h=475&q=eaarth&ved=2ahUKEwjhjK_A5Y_pAhWVmUsFHTdZC4UQMygAegUIARDRAQ)
+
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
   
