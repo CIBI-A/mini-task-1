@@ -302,10 +302,16 @@ nRF24L01 is connected with Arduino by SPI interface and LCD is interfaced with I
 
 
 ## Project-18:
-### [Distributed Sensor Network](https://diyodemag.com/projects/distributed_sensor_network)
+### [EVIL FRUIT BOWL](https://www.circuito.io/blog/evil-fruit-bowl/)
 #### Components used
+Arduino,
+SparkFun HX711,
+DF-Player Mini Mp3 Player
 #### How it works
+Load cell is a sensor or a transducer that converts a load or force acting on it into an electronic signal. ... Resistive load cells work on the principle of piezo-resistivity. When a load/force/stress is applied to the sensor, it changes its resistance.The changes in electrical resistance provided by the Load Cell need to be amplified so that they can be read by an Arduino so HX711 is used.
 #### Implementation
+The load cell at the bottom of the bowl detects changes in its weight and triggers the DF player to play horrible sounds once fruit is taken out of the bowl. 
+
 
 ## Project-19: 
 ### [Raspberry Pi Based COVID -19 Ventilator](https://www.electronicsforu.com/electronics-projects/raspberrypi-based-covid-19-ventilator-and-health-monitoring-device)
