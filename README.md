@@ -1,10 +1,5 @@
 # mini-task-1
 
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
-
-![Nairobi](https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg)
-
-
 ## Project-1:
 ### [XY Laser](https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
   
@@ -356,7 +351,7 @@ L293D is a Motor Driver IC which allows DC motor to drive on either direction.
 
 ## Project-22:
 ### [Wi-CASSS](https://www.hackster.io/govindanunni07/wifi-controlled-audio-source-selector-switch-wi-casss-d40ed3)
-<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Saved%20Pictures/Nairobi_death.jpg" width="300" height="200">
+<img src ="https://github.com/CIBI-A/mini-task-1/blob/master/Mini_task1/WI-class.jfif" width="300" height="200">
 
 Remote WiFi Controlled Audio Source Selector Switch (Wi-CASSS) which enables the user switch between two connected input/output audio devices over internet.
 #### Components used
